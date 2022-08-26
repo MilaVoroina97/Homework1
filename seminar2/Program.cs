@@ -27,34 +27,3 @@ while (chetvert!=0)
         Console.WriteLine("Вы ввели не номер четверти!");
         }
 }
-
-
-
-internal class Program
-{
-    static void Main(string[] args)
-    {
-        
-     string GetNum4()
-        {
-            string res = "";
-            Console.Write("QUATER Nr. ");
-            int x = int.Parse(Console.ReadLine()); 
-
-            if ( x==1 )           res = "x>0 && y>0";
-            else if ( x==2 )      res = "x<0 && y>0";
-            else if ( x==3 )      res = "x<0 && y<0";
-            else if ( x==4 )      res = "x>0 && y<0";
-            else                  res = "Quater nr must be within 1-4";           
-            return res;
-        }
-        try
-            {
-            Console.WriteLine(GetNum4());
-            }
-        catch
-            {
-            Console.WriteLine("Must be integers");    
-            }
-    }
-}
